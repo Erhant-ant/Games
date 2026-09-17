@@ -1,0 +1,48 @@
+name: dokuz_tas
+description: "Dokuz Taş - Premium Dokuz Taş Oyunu"
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.12.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  nearby_connections: ^4.3.0
+  permission_handler: ^13.0.2
+  audioplayers: ^6.8.1
+  shared_preferences: ^2.5.5
+  confetti: ^0.8.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  flutter_launcher_icons: ^0.13.1
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/images/launcher_logo.jpg"
+  web:
+    generate: true
+    image_path: "assets/images/launcher_logo.jpg"
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/white_stone.jpg
+    - assets/images/black_stone.jpg
+    - assets/images/marble_white.jpg
+    - assets/images/marble_black.jpg
+    - assets/images/neon_blue.jpg
+    - assets/images/neon_pink.jpg
+    - assets/images/app_logo.jpg
+    - assets/images/launcher_logo.jpg
+    - assets/audio/place.mp3
+    - assets/audio/capture.mp3
+    - assets/audio/mill.mp3
