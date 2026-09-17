@@ -1,4 +1,0 @@
-import 'package:flutter/material.dart';
-import '../../../../core/constants/app_colors.dart';
-class PageSection extends StatelessWidget { const PageSection({super.key,required this.eyebrow,required this.title,required this.child,this.action}); final String eyebrow,title; final Widget child; final Widget? action;
-  @override Widget build(BuildContext context) => Container(width:double.infinity,padding:const EdgeInsets.fromLTRB(24,76,24,20),child:ConstrainedBox(constraints:const BoxConstraints(maxWidth:1240),child:Column(crossAxisAlignment:CrossAxisAlignment.start,children:[Text(eyebrow.toUpperCase(),style:const TextStyle(color:AppColors.terracotta,fontSize:11,letterSpacing:2,fontWeight:FontWeight.bold)),const SizedBox(height:10),Row(children:[Expanded(child:Text(title,style:Theme.of(context).textTheme.headlineMedium)),if(action!=null) action!]),const SizedBox(height:28),child]))); }
